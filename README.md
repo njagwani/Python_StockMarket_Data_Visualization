@@ -21,7 +21,7 @@ Here we need some form of a data source like Yahoo for getting the price of Stoc
 
 In order to get started, I first created a folder named Python Project on Desktop. Launch Visual Studio Code and open the folder that you recently created. Go ahead and click on Terminal (under Visual Studio Code) > New Terminal > Enter the command "pip install pandas_datareader'.
 
-![](Images/pandasdatareader.png)
+![](Images/pandasdatareader.PNG)
 
 The next step is to use Jupyter Notebook
 On your Visual Studio Code Terminal, go ahead and run the command "Jupyter Notebook"
