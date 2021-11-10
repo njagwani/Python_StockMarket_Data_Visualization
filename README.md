@@ -80,7 +80,7 @@ Python code below comprises of the following
 - Output file in HTML format
 
 Here is the 2nd part of Python Code
-
+{
 def inc_dec(c,o):
     if c > o:
         value="Increase"
@@ -90,7 +90,6 @@ def inc_dec(c,o):
         value="Equal"
     return value
 
-[
 df["Status"]=[inc_dec(c,o) for c, o in zip(df.Close, df.Open)]
 
 df["Middle"]=(df.Open+df.Close)/2
@@ -109,7 +108,7 @@ p.rect(df.index[df.Status=="Decrease"], df.Middle[df.Status=="Decrease"], hours_
 
 output_file("CS.html")
 show (p)
-]
+}
 
 Overall Code: 🖇
 
