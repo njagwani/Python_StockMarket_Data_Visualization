@@ -16,7 +16,7 @@ In this Python Project, I have used Pandas to handle data and Bokeh libraries fo
 - Bokeh libraries
 
 ### Here is how I started!!! ⏳
-#### Stage 1: Downloading Datasets with Python 📑
+### Stage 1: Downloading Datasets with Python 📑
 Here we need some form of a data source like Yahoo for getting the price of Stock for a company (Like Paypal). For this, we will first need to install a library called pandas_datareader.
 
 In order to get started, I first created a folder named Python Project on Desktop. Launch Visual Studio Code and open the folder that you recently created. Go ahead and click on Terminal (under Visual Studio Code) > New Terminal > Enter the command "pip install pandas_datareader'.
@@ -39,6 +39,8 @@ In Jupyter Notebook, Click on New > Select Python 3 (ipykernal) > Renamed the No
 
 Below are following lines of code which get  but before that I highly recommend you to check out code here [Pandas Data Reader for Yahoo Finance Data](https://pandas-datareader.readthedocs.io/en/latest/remote_data.html#remote-data-yahoo)
 
+#### First part of the code:
+
 from pandas_datareader import data
 import datetime
 start=datetime.datetime(2021,8,1) #Enter the start date (YYYY,MM,DD)
@@ -49,7 +51,7 @@ df
 ![](Images/Output1.PNG)
 
 
-#### Stage 2: Building Stock Market Data Candlestick Charts 🛠
+### Stage 2: Building Stock Market Data Candlestick Charts 🛠
 
 Now for all the data which has been obtained for a stock name "PYPL"(ticker for PAYPAL) , it is time to construct CandleStick Charts. Below are th lines of code that help to plot the rectangles and segments of the CandleStick Charts.
 
@@ -79,7 +81,7 @@ Python code below comprises of the following information:
 - Candlestick Rectangle
 - Output file in HTML format
 
-Here is the 2nd part of Python Code
+#### Here is the 2nd part of Python Code:
 
 def inc_dec(c,o):
     if c > o:
