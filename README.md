@@ -2,7 +2,7 @@
 
 Hello!!!🥳
 
-This is the Python Stock Market Data Visualization Repository. 
+This is the Python Stock Market Data Visualization Repository. 📈
 
 The Ultimate goal of this Python Project is to fetch Stock Market Data using Panda libraries and build Customized Candlestick charts on Jupyter Notebook for Data visualization with the help of Bokeh libraries. 
 
@@ -16,7 +16,7 @@ In this Python Project, I have used Pandas to handle data and Bokeh libraries fo
 - Bokeh libraries
 
 ### So how do we get started?
-#### Stage 1: Downloading Datasets with Python
+#### Stage 1: Downloading Datasets with Python 📑
 Here we need some form of a data source like Yahoo for getting the price of Stock for a company (Like Paypal). For this, we will first need to install a library called pandas_datareader.
 
 In order to get started, I first created a folder named Python Project on Desktop. Launch Visual Studio Code and open the folder that you recently created. Go ahead and click on Terminal (under Visual Studio Code) > New Terminal > Enter the command "pip install pandas_datareader'.
@@ -49,7 +49,7 @@ df
 ![](Images/Output1.PNG)
 
 
-#### Stage 2: Stock Market Data Candlestick Charts
+#### Stage 2: Constructing Stock Market Data Candlestick Charts 🛠
 
 Now for all the data which has been obtained for a stock name "PYPL"(ticker for PAYPAL) , it is time to construct CandleStick Charts. Below are th lines of code that help to plot the rectangles and segments of the CandleStick Charts.
 
@@ -108,7 +108,7 @@ p.rect(df.index[df.Status=="Decrease"], df.Middle[df.Status=="Decrease"], hours_
 output_file("CS.html")
 show (p)
 
-Overall Code:
+Overall Code: 🖇
 
 from pandas_datareader import data
 import datetime
@@ -147,7 +147,6 @@ p.rect(df.index[df.Status=="Decrease"], df.Middle[df.Status=="Decrease"], hours_
 
 output_file("CS.html")
 show (p)
-
 
 ![](Images/CandleStickChart.PNG)
 
