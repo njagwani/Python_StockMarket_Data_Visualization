@@ -81,7 +81,7 @@ Python code below comprises of the following information:
 - Candlestick Rectangle
 - Output file in HTML format
 
-#### Here is the 2nd part of Python Code:
+#### Second part of the code:
 
 def inc_dec(c,o):
     if c > o:
