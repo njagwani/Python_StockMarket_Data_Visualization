@@ -21,7 +21,7 @@ Here we need some form of a data source like Yahoo for getting the price of Stoc
 
 In order to get started, I first created a folder named Python Project on Desktop. Launch Visual Studio Code and open the folder that you recently created. Go ahead and click on Terminal (under Visual Studio Code) > New Terminal > Enter the command "pip install pandas_datareader'.
 
-![](/Images/pandasdatareader.PNG)
+![](/Images/pandasdatareader.png)
 
 The next step is to use Jupyter Notebook
 On your Visual Studio Code Terminal, go ahead and run the command "Jupyter Notebook"
@@ -32,7 +32,7 @@ You will then be directed to Jupyter Notebook service which will be running loca
 
 In Jupyter Notebook, Click on New > Select Python 3 (ipykernal) > Renamed the Notebook as "Stock_Analysis"
 
-![](Images/jupytercreate1.png)
+![](Images/jupytercreate1.PNG)
 
 ![](Images/jupytercreate2.png)
 
@@ -46,7 +46,7 @@ end=datetime.datetime(2021,11,10) #Enter the end date (YYYY,MM,DD)
 df=(data.DataReader(name="PYPL", data_source="yahoo",start=start,end=end))
 df
 
-![](Images/Output1.png)
+![](Images/Output1.PNG)
 
 
 Stage 2: Stock Market Data Candlestick Charts]
@@ -57,12 +57,12 @@ Before we get in coding, we will first need to install Bokeh Libraries.
 On Visual Studio Code, Navigate to your terminal and enter the below command to install Bokeh libraries
 pip3 install bokeh
 
-![](Images/installbokeh.png)
+![](Images/installbokeh.PNG)
 
 Also be sure to upgrade your Jupyter Notebook by entering the below command in order to avoid any failures when running creating Candlestick Charts
 pip3 install notebook --upgrade
 
-![](Images/![](Images/installbokeh.png).png)
+![](Images/notebookupgrade.PNG)
 
 For data to be visualizated in the form of charts and to display the output file in an html format, we will need to include the following on our code:
 
@@ -148,7 +148,7 @@ output_file("CS.html")
 show (p)
 
 
-![](Images/CandleStickChart.png)
+![](Images/CandleStickChart.PNG)
 
 Cheers!
 
