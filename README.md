@@ -9,13 +9,13 @@ The Ultimate goal of this Python Project is to fetch Stock Market Data using Pan
 In this Python Project, I have used Pandas to handle data and Bokeh libraries for visualizing the data. 
 
 ### Pre-requisites for this project
-- Python3.9
+- Python v3.9
 - Visual Studio Code 2019
 - Jupyter Notebook
 - Pandas_datareader Libraries
 - Bokeh libraries
 
-### So how do we get started?
+### Here is how I started!!! ⏳
 #### Stage 1: Downloading Datasets with Python 📑
 Here we need some form of a data source like Yahoo for getting the price of Stock for a company (Like Paypal). For this, we will first need to install a library called pandas_datareader.
 
@@ -80,7 +80,7 @@ Python code below comprises of the following
 - Output file in HTML format
 
 Here is the 2nd part of Python Code
-{
+
 def inc_dec(c,o):
     if c > o:
         value="Increase"
@@ -91,26 +91,18 @@ def inc_dec(c,o):
     return value
 
 df["Status"]=[inc_dec(c,o) for c, o in zip(df.Close, df.Open)]
-
 df["Middle"]=(df.Open+df.Close)/2
 df["Height"]=abs(df.Close-df.Open)
-
 p=figure(x_axis_type='datetime', width=1000, height=800)
 p.title="CandleStick Chart"
-
 hours_12=12*60*60*1000
-
 p.segment(df.index, df.High, df.index, df.Low, color="Black")
-
 p.rect(df.index[df.Status=="Increase"], df.Middle[df.Status=="Increase"], hours_12, df.Height[df.Status=="Increase"], fill_color="#7FFF00",line_color="black")
-
 p.rect(df.index[df.Status=="Decrease"], df.Middle[df.Status=="Decrease"], hours_12, df.Height[df.Status=="Decrease"], fill_color="red",line_color="black")
-
 output_file("CS.html")
 show (p)
-}
 
-Overall Code: 🖇
+Full Finished Code 💻
 
 from pandas_datareader import data
 import datetime
