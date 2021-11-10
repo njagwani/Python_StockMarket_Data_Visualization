@@ -49,7 +49,8 @@ df
 ![](Images/Output1.PNG)
 
 
-Stage 2: Stock Market Data Candlestick Charts]
+#### Stage 2: Stock Market Data Candlestick Charts
+
 Now for all the data which has been obtained for a stock name "PYPL"(ticker for PAYPAL) , it is time to construct CandleStick Charts. Below are th lines of code that help to plot the rectangles and segments of the CandleStick Charts.
 
 Before we get in coding, we will first need to install Bokeh Libraries. 
@@ -69,14 +70,14 @@ For data to be visualizated in the form of charts and to display the output file
 from bokeh.plotting import figure, show, output_file
 
 Python code below comprises of the following
-A function to give us the high-low points, middle value point and overall height of the CandleStick
-x-Axis
-y-axis
-Title
-Hours in MilliSeconds
-Candlestick Segments
-Candlestick Rectangle
-Output file in HTML format
+- A function to give us the high-low points, middle value point and overall height of the CandleStick
+- x-Axis
+- y-axis
+- Title
+- Hours in MilliSeconds
+- Candlestick Segments
+- Candlestick Rectangle
+- Output file in HTML format
 
 Here is the 2nd part of Python Code
 def inc_dec(c,o):
