@@ -49,7 +49,7 @@ df
 ![](Images/Output1.PNG)
 
 
-#### Stage 2: Constructing Stock Market Data Candlestick Charts 🛠
+#### Stage 2: Building Stock Market Data Candlestick Charts 🛠
 
 Now for all the data which has been obtained for a stock name "PYPL"(ticker for PAYPAL) , it is time to construct CandleStick Charts. Below are th lines of code that help to plot the rectangles and segments of the CandleStick Charts.
 
@@ -112,7 +112,7 @@ output_file("CS.html")
 
 show (p)
 
-Full Finished Code 💻
+### Full Finished Code 💻
 
 from pandas_datareader import data
 
